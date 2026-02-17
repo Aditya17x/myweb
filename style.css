@@ -1,0 +1,84 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(-45deg,#0f0c29,#302b63,#24243e,#000000);
+background-size:400% 400%;
+animation:gradient 12s ease infinite;
+color:white;
+overflow-x:hidden;
+}
+
+@keyframes gradient{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.glass{
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(20px);
+border:1px solid rgba(255,255,255,0.2);
+border-radius:20px;
+}
+
+.hero{
+text-align:center;
+padding:120px 20px;
+}
+
+.hero span{
+background:linear-gradient(90deg,#00f5ff,#ff00ff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.btn{
+margin-top:20px;
+padding:12px 35px;
+border:none;
+border-radius:30px;
+background:linear-gradient(90deg,#00f5ff,#ff00ff);
+color:white;
+cursor:pointer;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.1);
+box-shadow:0 0 20px #ff00ff88;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+gap:30px;
+padding:80px;
+flex-wrap:wrap;
+}
+
+.card{
+width:260px;
+padding:30px;
+transition:0.4s;
+text-align:center;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+#loader{
+position:fixed;
+width:100%;
+height:100vh;
+background:black;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:1000;
+}
